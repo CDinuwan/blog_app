@@ -54,7 +54,7 @@ class _LoginRegisterState extends State<LoginRegisterPage> {
       child: new CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 110.0,
-        child: Image.asset('images/app_logo.png'),
+        child: Image.asset('logo.png'),
       ),
     );
   }
@@ -68,8 +68,10 @@ class _LoginRegisterState extends State<LoginRegisterPage> {
         onPressed: validAndSave,
       ),
       new FlatButton(
-        child: new Text("Not have an Account? Create Account?",
-            style: new TextStyle(fontSize: 20.0)),
+        child: Center(
+          child: new Text("Not have an Account? Create Account?",
+              style: new TextStyle(fontSize: 20.0)),
+        ),
         textColor: Colors.white,
         color: Colors.blue,
         onPressed: movetoRegister,
